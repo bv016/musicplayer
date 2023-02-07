@@ -1,4 +1,4 @@
-# musicplayer
+# music player
 
 
 ---
@@ -7,3 +7,5 @@
 
 - [] Demo the list making tool
 - [x] ez
+- [] make button
+- <del> [x] old item </del>
