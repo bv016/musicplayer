@@ -9,6 +9,7 @@
 - [] add image display
 - [] create functioning buttons
 - [] transparent buttons
+- [] make a folder for music and images
 
 ---
 
