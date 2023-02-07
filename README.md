@@ -9,3 +9,7 @@
 - [] add image display
 - [] create functioning buttons
 - [] transparent buttons
+
+---
+
+
