@@ -5,11 +5,11 @@
 
 # to do list
 
-- [ ] find music mp3 files
+- [x] find music mp3 files
 - [ ] add image display
 - [ ] create functioning buttons
 - [ ] transparent buttons
-- [ ] make a folder for music and images
+- [x] make a folder for music and images
 
 ---
 
