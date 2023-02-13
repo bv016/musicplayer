@@ -13,35 +13,34 @@ Boolean firstMouseclick=false;
 //
 void setup() {
   size(300, 300);
-  minim = new Minim(this);
-  song0 = minim.loadFile("../../music/Full of You.mp3");
-  song1 = minim.loadFile("../../Music/想いきり.mp3");
-  song2 = minim.loadFile("../../Music/D Half Moon.mp3)");
-  song3 = minim.loadFile("../../Music/Steal This Night.mp3");
-  song4 = minim.loadFile("../../Music/pathetic!");
-  song5 = minim.loadFile("../../Music/Last Train At 25 O'clock.mp3");
-  song6 = minim.loadFile("../../Music/Clouds.mp3");
-  song7 = minim.loadFile("../../Music/Like You.mp3");
-  soundEffect0 = minim.loadFile("../Sound Effects/");
+  loadMusic ();
   song0.loop(0);
+  soundEffect0.loop(0);
 }// End setup
 //
 void draw() {
-if (firstMouseclick==false) background(0);
+  if (firstMouseclick==false) background(0);
 } //End Draw
 //
 void keyPressed() {
-//
+  //
+  if (key=='1') song0.loop(0);
+  if (key=='2') song1.loop(0);
+  if (key=='3') song2.loop(0);
+  if (key=='4') song3.loop(0);
+  if (key=='5') song4.loop(0);
+  if (key=='6') song5.loop(0);
+  if (key=='7') song6.loop(0);
+  if (key=='8') song7.loop(0);
   if (key =='q') exit();
-  
   if (key == CODED && key==ESC) exit();
-//
+  //
   soundEffect0.play();
 } //End keypPressed
 //
 void mousePressed() {
   soundEffect1.rewind();
-if ( firstMouseclick==false ) firstMouseclick = true;
+  if ( firstMouseclick==false ) firstMouseclick = true;
 } //End mousePressed
 //
 //End MAIN Program
