@@ -9,20 +9,27 @@ import ddf.minim.ugens.*;
 Minim minim;
 AudioPlayer song0, song1, song2, song3, song4, song5, song6, song7;
 AudioPlayer soundEffect0, soundEffect1;
-Boolean firstMouseclick=false;
+//
+Boolean activateWindow=false;
 //
 void setup() {
   size(300, 300);
-  loadMusic ();
+  loadMusic();
   song0.loop(0);
-  soundEffect0.loop(0);
+  //soundEffect0.loop(0);
 }// End setup
 //
 void draw() {
-  if (firstMouseclick==false) background(0);
+  if ( activateWindow == true) background(0);
 } //End Draw
 //
 void keyPressed() {
+  //
+  soundEffect0.play();
+  soundEffect0.rewind();
+  println("KeyPressed:". soundEffect0.length() );
+  println("When does the sound stop? Indicates delay");
+  if (key=='z') song0.loop(0);
   //
   if (key=='1') song0.loop(0);
   if (key=='2') song1.loop(0);
@@ -40,7 +47,7 @@ void keyPressed() {
 //
 void mousePressed() {
   soundEffect1.rewind();
-  if ( firstMouseclick==false ) firstMouseclick = true;
+  if ( activateWindow==false ) activateWindow = true;
 } //End mousePressed
 //
 //End MAIN Program
